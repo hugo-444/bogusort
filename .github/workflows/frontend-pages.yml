@@ -11,6 +11,10 @@ on:
       - "tsconfig.base.json"
       - ".github/workflows/frontend-pages.yml"
   workflow_dispatch:
+  workflow_call:
+    secrets:
+      VITE_API_URL:
+        required: true
 
 permissions:
   contents: read
