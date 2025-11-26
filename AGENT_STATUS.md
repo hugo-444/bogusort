@@ -1,6 +1,6 @@
 # AI Agent Status Board
 
-Last updated: 2025-11-26 01:45 UTC  
+Last updated: 2025-11-26 02:05 UTC  
 Source: Inventory Manager – System Overview Report (v1.0.0 Beta)
 
 ## Snapshot
@@ -9,7 +9,7 @@ Source: Inventory Manager – System Overview Report (v1.0.0 Beta)
 - Frontend-Agent — delivered Vite/React shell (`apps/frontend`) w/ scanner-first layout, Vite build passing.
 - Data-Agent — ready — Prisma schema work unblocked now that repo + services exist.
 - QA-Agent — queued — test strategy blocked on initial feature scaffolding.
-- Coordinator-Agent — active — orchestrating pnpm workspace + tracking installation blockers.
+- Coordinator-Agent — active — documented GH Pages deployment + automated frontend deploy workflow.
 
 ## Agent Detail
 
@@ -48,7 +48,7 @@ Source: Inventory Manager – System Overview Report (v1.0.0 Beta)
 ### Coordinator-Agent
 - **Focus:** Maintain cross-agent visibility, update this file, flag blockers.
 - **Status:** Active
-- **Latest Update:** Ran `pnpm install` with necessary dependency pin adjustments (tsconfig-paths, html5-qrcode, React 19.2, plugin react-swc). Verified backend + frontend builds.
+- **Latest Update:** Authored `docs/DEPLOYMENT.md` (GitHub Pages instructions) and added `.github/workflows/frontend-pages.yml` to auto-build + deploy the frontend with repo-aware base paths.
 - **Next Action:** Support Data-Agent with Prisma tooling + prep QA baseline once schema exists.
 
 ---
